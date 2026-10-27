@@ -1,0 +1,64 @@
+/* --- Basis & Variablen --- */
+:root {
+  --primary: #2563eb;
+  --bg: #f8fafc;
+  --text: #1e293b;
+  --max-w: 700px;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--bg);
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+/* --- Navigation --- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* --- Sektionen & Karten --- */
+section {
+  margin-bottom: 3rem;
+}
+
+article {
+  background: white;
+  padding: 1.2rem;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+  margin-bottom: 1rem;
+}
+
+/* --- Links & Buttons --- */
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 0.875rem;
+  color: #64748b;
+  margin-top: 4rem;
+}
