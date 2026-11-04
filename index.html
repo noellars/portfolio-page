@@ -3,68 +3,170 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Portfolio von [Dein Name] – Projekte, Fähigkeiten und Kontakt.">
-  <title>[Noel Schneider] – Portfolio</title>
+  <title>Noël Schneider – Portfolio</title>
   <meta name="description" content="Portfolio von Noël Schneider – Student Digital Business and AI an der BFH. Über mich, Werdegang, Schwerpunkte und Kontakt.">
+  <meta name="author" content="Noël Schneider">
+
+  <!-- Vorschau beim Teilen (z. B. LinkedIn, WhatsApp) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Noël Schneider – Portfolio">
+  <meta property="og:description" content="Student BFH | Bachelor Digital Business and AI">
+  <!-- <meta property="og:image" content="img/vorschau.jpg"> -->
+
+  <!-- <link rel="icon" href="img/favicon.svg" type="image/svg+xml"> -->
+  <link rel="stylesheet" href="CSS.css">
+  <!-- JavaScript folgt: <script src="script.js" defer></script> -->
 </head>
 <body>
-  <header>
-    <a href="#start" aria-label="Zur Startseite">[Noël Schneider]</a>
+  <!-- Sprunglink für Tastatur- und Screenreader-Nutzer (per CSS ausblenden, bis er Fokus hat) -->
+  <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
+
+  <header class="site-header">
+    <a class="logo" href="#start" aria-label="Noël Schneider – zur Startseite">Noël Schneider</a>
 
     <nav aria-label="Hauptnavigation">
-      <ul>
+      <!-- Button für mobiles Menü, wird später per JavaScript gesteuert -->
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="hauptmenue">
+        Menü
+      </button>
+      <ul id="hauptmenue">
         <li><a href="#ueber-mich">Über mich</a></li>
-        <li><a href="#projekte">Weitere Infos</a></li>
+        <li><a href="#werdegang">Werdegang</a></li>
+        <li><a href="#schwerpunkte">Schwerpunkte</a></li>
         <li><a href="#kontakt">Kontakt</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <section id="start" aria-labelledby="start-titel">
-      <p>Hallo, ich bin</p>
-      <h1 id="start-titel">[Noël Schneider]</h1>
-      <p>Student BFH | Bachelor Digital Business and AI</p>
-      <a href="#projekte">Meine Projekte ansehen</a>
+  <main id="inhalt">
+    <!-- ===== Start / Hero ===== -->
+    <section id="start" class="hero" aria-labelledby="start-titel">
+      <!-- <img src="img/profilbild.jpg" alt="Porträt von Noël Schneider" width="240" height="240"> -->
+      <p class="hero-intro">Hallo, ich bin</p>
+      <h1 id="start-titel">Noël Schneider</h1>
+      <p class="hero-untertitel">Student BFH | Bachelor Digital Business and AI</p>
+      <p class="hero-text">[Ein Satz, was dich antreibt – z. B. «Ich verbinde Business-Denken mit KI, um digitale Produkte zu gestalten.»]</p>
+      <div class="hero-aktionen">
+        <a class="button" href="#ueber-mich">Mehr über mich</a>
+        <a class="button button-sekundaer" href="#kontakt">Kontakt aufnehmen</a>
+      </div>
     </section>
 
+    <!-- ===== Über mich ===== -->
     <section id="ueber-mich" aria-labelledby="ueber-mich-titel">
       <h2 id="ueber-mich-titel">Über mich</h2>
-      <p>
-        [Student]
-      </p>
+      <p>[Kurzer Text: wer du bist, was du studierst, was dich interessiert.]</p>
+      <p>[Optional zweiter Absatz: was du nach dem Studium vorhast.]</p>
+
       <h3>Fähigkeiten</h3>
-      <ul>
-        <li>[Hallo]</li>
+      <div class="skills">
+        <section aria-labelledby="skills-technisch">
+          <h4 id="skills-technisch">Technisch</h4>
+          <ul>
+            <li>HTML &amp; CSS</li>
+            <li>[z. B. Python]</li>
+            <li>[z. B. Git &amp; GitHub]</li>
+          </ul>
+        </section>
+        <section aria-labelledby="skills-business">
+          <h4 id="skills-business">Business &amp; KI</h4>
+          <ul>
+            <li>[z. B. Business Model Canvas]</li>
+            <li>[z. B. Prompt / Context Engineering]</li>
+            <li>[z. B. Projektmanagement]</li>
+          </ul>
+        </section>
+        <section aria-labelledby="skills-sprachen">
+          <h4 id="skills-sprachen">Sprachen</h4>
+          <ul>
+            <li>Deutsch – [Muttersprache]</li>
+            <li>Englisch – [Niveau]</li>
+            <li>Französisch – [Niveau]</li>
+          </ul>
+        </section>
+      </div>
+    </section>
+
+    <!-- ===== Werdegang (ersetzt Projekte) ===== -->
+    <section id="werdegang" aria-labelledby="werdegang-titel">
+      <h2 id="werdegang-titel">Werdegang</h2>
+
+      <ol class="timeline" reversed>
+        <li>
+          <article>
+            <p class="zeitraum"><time datetime="2025">[2025]</time> – heute</p>
+            <h3>Bachelor Digital Business and AI</h3>
+            <p class="ort">Berner Fachhochschule BFH</p>
+            <p>[Was du dort lernst, z. B. Schwerpunkte, Module.]</p>
+          </article>
+        </li>
+        <li>
+          <article>
+            <p class="zeitraum"><time datetime="2020">[Jahr]</time> – <time datetime="2025">[Jahr]</time></p>
+            <h3>[Bisherige Stelle / Funktion]</h3>
+            <p class="ort">[Firma, Ort]</p>
+            <p>[Aufgaben und Verantwortung in 1–2 Sätzen.]</p>
+          </article>
+        </li>
+        <li>
+          <article>
+            <p class="zeitraum"><time datetime="2016">[Jahr]</time> – <time datetime="2020">[Jahr]</time></p>
+            <h3>[Ausbildung / Lehre / Schule]</h3>
+            <p class="ort">[Institution, Ort]</p>
+            <p>[Abschluss, ggf. Schwerpunkt.]</p>
+          </article>
+        </li>
+      </ol>
+
+      <!-- <a class="button" href="dokumente/CV_Noel_Schneider.pdf" download>Lebenslauf herunterladen (PDF)</a> -->
+    </section>
+
+    <!-- ===== Schwerpunkte / Interessen ===== -->
+    <section id="schwerpunkte" aria-labelledby="schwerpunkte-titel">
+      <h2 id="schwerpunkte-titel">Schwerpunkte</h2>
+      <p>Themen, mit denen ich mich im Studium und darüber hinaus beschäftige.</p>
+
+      <ul class="karten">
+        <li>
+          <article class="karte">
+            <h3>Künstliche Intelligenz im Business</h3>
+            <p>[Wie KI Geschäftsprozesse und Produkte verändert.]</p>
+          </article>
+        </li>
+        <li>
+          <article class="karte">
+            <h3>Digitale Produkte &amp; SaaS</h3>
+            <p>[Von der Idee zum Geschäftsmodell.]</p>
+          </article>
+        </li>
+        <li>
+          <article class="karte">
+            <h3>Responsible AI</h3>
+            <p>[Vertrauenswürdige und verantwortungsvolle KI.]</p>
+          </article>
+        </li>
       </ul>
     </section>
 
-    <section id="projekte" aria-labelledby="projekte-titel">
-      <h2 id="projekte-titel">Projekte</h2>
-
-      <article>
-        <h3>[Blabla]</h3>
-        <p></p>
-        <a href="[https://github.com/noellars/portfolio-page.git]">Projekt ansehen</a>
-      </article>
-
-      <article>
-        <h3>[Portfolio-Page]</h3>
-        <p>Task für Studium bla bla</p>
-        <a href="[https://github.com/noellars/portfolio-page.git]">Projekt ansehen</a>
-      </article>
-    </section>
-
+    <!-- ===== Kontakt ===== -->
     <section id="kontakt" aria-labelledby="kontakt-titel">
       <h2 id="kontakt-titel">Kontakt</h2>
       <p>Du möchtest mit mir in Kontakt treten? Schreib mir gerne.</p>
-      <a href="mailto:[deine-email@example.com]">E-Mail schreiben</a>
-      <p><a href="[Dein GitHub-Profil]">GitHub</a></p>
+
+      <address>
+        <ul class="kontakt-liste">
+          <li><a href="mailto:deine-email@example.com">E-Mail schreiben</a></li>
+          <li><a href="https://www.linkedin.com/in/[dein-profil]" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="https://github.com/noellars" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        </ul>
+      </address>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; [2026] [Noel Schneider]</p>
+  <footer class="site-footer">
+    <p>&copy; <span id="jahr">2026</span> Noël Schneider</p>
+    <p><a href="https://github.com/noellars/portfolio-page" target="_blank" rel="noopener noreferrer">Quellcode auf GitHub</a></p>
+    <p><a href="#start">Nach oben ↑</a></p>
   </footer>
 </body>
 </html>
