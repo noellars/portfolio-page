@@ -150,9 +150,21 @@ main > section {
   padding: 3rem 0;
 }
 
-/* ===== Hero ===== */
 .hero {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 3rem;
   padding: 5rem 0 4rem;
+}
+
+.hero-bild {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid var(--surface);
+  box-shadow: 0 10px 30px rgba(37, 99, 235, 0.2);
 }
 
 .hero-intro {
@@ -245,7 +257,18 @@ main > section {
 .skills li:last-child {
   border-bottom: none;
 }
+/* ===== Schwerpunkte (Karten) ===== */
+.karten {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
 
+.karten h3 {
+  margin-top: 0;
+  font-size: 1.1rem;
+  color: var(--primary);
+}
 /* ===== Werdegang (Timeline) ===== */
 .timeline {
   list-style: none;
@@ -350,6 +373,17 @@ address {
     padding: 0.4rem 0.9rem;
     border-radius: var(--radius);
     cursor: pointer;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .hero-bild {
+    order: -1;
+    width: 160px;
+    height: 160px;
   }
 
   /* Menü klappt unter dem Header auf */
