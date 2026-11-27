@@ -4,36 +4,35 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Noël Schneider – Portfolio</title>
-  <meta name="description" content="Portfolio von Noël Schneider – Student Digital Business and AI an der BFH. Über mich, Werdegang, Schwerpunkte und Kontakt.">
+  <meta name="description" content="Portfolio von Noël Schneider – Student Digital Business and AI an der BFH. Über mich, Schwerpunkte, Werdegang und Kontakt.">
   <meta name="author" content="Noël Schneider">
 
   <!-- Vorschau beim Teilen (z. B. LinkedIn, WhatsApp) -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Noël Schneider – Portfolio">
   <meta property="og:description" content="Student BFH | Bachelor Digital Business and AI">
-  <!-- <meta property="og:image" content="img/vorschau.jpg"> -->
+  <meta property="og:image" content="https://noellars.github.io/portfolio-page/Images/Portrait.png">
 
-  <!-- <link rel="icon" href="img/favicon.svg" type="image/svg+xml"> -->
+  <link rel="icon" href="Images/Favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="Images/Favicon.png">
   <link rel="stylesheet" href="CSS.css">
-  <!-- JavaScript: <script src="javascript.js" defer></script> -->
   <script src="javascript.js" defer></script>
-  </head>
+</head>
 <body>
-  <!-- Sprunglink für Tastatur- und Screenreader-Nutzer (per CSS ausblenden, bis er Fokus hat) -->
+  <!-- Sprunglink für Tastatur- und Screenreader-Nutzer -->
   <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
 
   <header class="site-header">
     <a class="logo" href="#start" aria-label="Noël Schneider – zur Startseite">Noël Schneider</a>
 
     <nav aria-label="Hauptnavigation">
-      <!-- Button für mobiles Menü, wird später per JavaScript gesteuert -->
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="hauptmenue">
         Menü
       </button>
       <ul id="hauptmenue">
         <li><a href="#ueber-mich">Über mich</a></li>
-        <li><a href="#werdegang">Werdegang</a></li>
         <li><a href="#schwerpunkte">Schwerpunkte</a></li>
+        <li><a href="#werdegang">Werdegang</a></li>
         <li><a href="#kontakt">Kontakt</a></li>
       </ul>
     </nav>
@@ -42,21 +41,24 @@
   <main id="inhalt">
     <!-- ===== Start / Hero ===== -->
     <section id="start" class="hero" aria-labelledby="start-titel">
-      <!-- <img src="img/profilbild.jpg" alt="Porträt von Noël Schneider" width="240" height="240"> -->
-      <p class="hero-intro">Hallo, ich bin</p>
-      <h1 id="start-titel">Noël Schneider</h1>
-      <p class="hero-untertitel">Student BFH | Bachelor Digital Business and AI</p>
-      <p class="hero-text">Ich verbinde Business-Denken mit IT-Wissen.</p>
-      <div class="hero-buttons">
-        <a class="button" href="#ueber-mich">Mehr über mich</a>
-        <a class="button button-sekundaer" href="#kontakt">Kontakt aufnehmen</a>
+      <div class="hero-inhalt">
+        <p class="hero-intro">Hallo, ich bin</p>
+        <h1 id="start-titel">Noël Schneider</h1>
+        <p class="hero-untertitel">Student BFH | Bachelor Digital Business and AI</p>
+        <p class="hero-text">Ich verbinde Business-Denken mit IT-Wissen und interessiere mich besonders für den verantwortungsvollen Einsatz von KI in Unternehmen.</p>
+        <div class="hero-buttons">
+          <a class="button" href="#ueber-mich">Mehr über mich</a>
+          <a class="button button-sekundaer" href="#kontakt">Kontakt aufnehmen</a>
+        </div>
       </div>
+
+      <img class="hero-bild" src="Images/Portrait.png" alt="Porträt von Noël Schneider" width="300" height="300">
     </section>
 
     <!-- ===== Über mich ===== -->
     <section id="ueber-mich" aria-labelledby="ueber-mich-titel">
       <h2 id="ueber-mich-titel">Über mich</h2>
-      <p>Ich studiere an der Berner Fachhochschule BFH Digital Business and AI.</p>
+      <p>Ich studiere Digital Business and AI an der Berner Fachhochschule BFH.</p>
       <p>Des Weiteren reise ich gerne durch die Welt und erforsche neue Kulturen.</p>
 
       <h3>Fähigkeiten</h3>
@@ -64,9 +66,9 @@
         <section aria-labelledby="skills-technisch">
           <h4 id="skills-technisch">Technisch</h4>
           <ul>
-            <li>HTML</li>
-            <li>Javacript</li>
-            <li>GitHub</li>
+            <li>HTML &amp; CSS</li>
+            <li>JavaScript</li>
+            <li>Git &amp; GitHub</li>
           </ul>
         </section>
         <section aria-labelledby="skills-business">
@@ -88,22 +90,46 @@
       </div>
     </section>
 
-    <!-- ===== Werdegang (ersetzt Projekte) ===== -->
+    <!-- ===== Schwerpunkte ===== -->
+    <section id="schwerpunkte" aria-labelledby="schwerpunkte-titel">
+      <h2 id="schwerpunkte-titel">Schwerpunkte</h2>
+      <div class="karten">
+        <article>
+          <h3>KI im Unternehmen</h3>
+          <p>Wie KI sinnvoll, sicher und verantwortungsvoll in Geschäftsprozesse eingebunden werden kann.</p>
+        </article>
+        <article>
+          <h3>Digital Business</h3>
+          <p>Digitale Geschäftsmodelle entwickeln und Prozesse mit Technologie verbessern.</p>
+        </article>
+        <article>
+          <h3>Requirements &amp; Projekte</h3>
+          <p>Anforderungen verstehen, strukturieren und Projekte vom Konzept bis zur Umsetzung begleiten.</p>
+        </article>
+        <article>
+          <h3>Web-Entwicklung</h3>
+          <p>Responsive Webseiten mit HTML, CSS und JavaScript bauen – wie dieses Portfolio.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== Werdegang ===== -->
     <section id="werdegang" aria-labelledby="werdegang-titel">
       <h2 id="werdegang-titel">Werdegang</h2>
 
       <ol class="timeline" reversed>
         <li>
           <article>
-            <p class="zeitraum"><time datetime="2026">2026</time> – heute</p>
+            <p class="zeitraum"><time datetime="2025">2025</time> – heute</p>
             <h3>Bachelor Digital Business and AI</h3>
             <p class="ort">Berner Fachhochschule BFH</p>
-            <p>Business and AI</p>
+            <p>Studium an der Schnittstelle von Wirtschaft, Informatik und künstlicher Intelligenz.</p>
           </article>
+        </li>
+      </ol>
 
       <!-- <a class="button" href="dokumente/CV_Noel_Schneider.pdf" download>Lebenslauf herunterladen (PDF)</a> -->
     </section>
-
 
     <!-- ===== Kontakt ===== -->
     <section id="kontakt" aria-labelledby="kontakt-titel">
@@ -113,7 +139,7 @@
       <address>
         <ul class="kontakt-liste">
           <li><a href="mailto:schneidernoellars@gmail.com">E-Mail schreiben</a></li>
-          <li><a href="https://www.linkedin.com/in/noelschneider" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="https://www.linkedin.com/in/noël-schneider" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
           <li><a href="https://github.com/noellars" target="_blank" rel="noopener noreferrer">GitHub</a></li>
         </ul>
       </address>
